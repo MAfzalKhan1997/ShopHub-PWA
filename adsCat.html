@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="./css/ads.css">
+    <link rel="stylesheet" href="./css/bktotp.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+
+    <title>Categories</title>
+</head>
+
+<body>
+    <div id="loading">
+        <img id="loading-image" src="images/loader/Preloader_7.gif" alt="Loading..." />
+    </div>
+
+    <a href="javascript:" id="return-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <div id="wrapper">
+        <div class="overlay"></div>
+
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <div class="sidebar-header">
+                    <div class="sidebar-brand">
+                        <a href="JavaScript:void(0)">ShopHub</a>
+                    </div>
+                </div>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <!-- <li id="navpostad">
+                    <a href="#" data-toggle="modal" data-target="#ModalPostAd">Submit an AD</a>
+                </li> -->
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInLeft" role="menu">
+                        <div class="dropdown-header">AD's</div>
+                        <li>
+                            <a href="ads.html">All ADs</a>
+                        </li>
+                        <li>
+                            <a href="#" id="mobiles" onclick="mobiles('mobiles','MOBILES');">Mobiles</a>
+                        </li>
+                        <script>
+                            function mobiles(mobiles, catName) {
+
+                                localStorage.setItem('category', mobiles);
+                                localStorage.setItem('catName', catName);
+                                location.href = "adsCat.html";
+
+                            }
+                        </script>
+                        <li>
+                            <a href="#" id="computers" onclick="computers('computers','COMPUTERS');">Computers</a>
+                        </li>
+                        <script>
+                            function computers(computers, catName) {
+
+                                localStorage.setItem('category', computers);
+                                localStorage.setItem('catName', catName);
+                                location.href = "adsCat.html";
+
+                            }
+                        </script>
+                        <li>
+                            <a href="#" id="others" onclick="others('others','OTHERS');">Others</a>
+                        </li>
+                        <script>
+                            function others(others, catName) {
+
+                                localStorage.setItem('category', others);
+                                localStorage.setItem('catName', catName);
+                                location.href = "adsCat.html";
+
+                            }
+                        </script>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInLeft" role="menu">
+                        <div class="dropdown-header">User</div>
+                        <li id="navmyads">
+                            <a href="myAds.html">My ADs</a>
+                        </li>
+                        <li id="navinbox">
+                            <a href="inbox.html">Inbox</a>
+                        </li>
+                        <li id="navfavourite">
+                            <a href="favs.html">Favourites</a>
+                        </li>
+                        <li id="navsignout">
+                            <a href="JavaScript:void(0)" onclick="signout();">Sign-Out</a>
+                        </li>
+                        <li id="navsigninup">
+                            <a href="index.html">SignIn/SignUp</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">Follow Us</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+                <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                        <span class="hamb-top"></span>
+                        <span class="hamb-middle"></span>
+                        <span class="hamb-bottom"></span>
+                    </button>
+
+            <div class="container-fluid" id="containerfluid" style="margin:0px; padding:0px">
+                <div class="row no-gutters">
+                    <div class="col-12">
+
+
+                        <div class="flex-container sticky-top" id="navflex">
+                            <div id="navtoggle" style="min-width:63px; ">
+                                <!-- <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                                    <span class="hamb-top"></span>
+                                    <span class="hamb-middle"></span>
+                                    <span class="hamb-bottom"></span>
+                                </button> -->
+                            </div>
+                            <div id="navbrand" style="width:95%; text-align:left; ">ShopHub</div>
+                            <div id="navsearch" style="width:95%; ">
+                                <input type="text" name="" id="searchbar" placeholder="Search Here">
+                            </div>
+                            <div id="navpostad" style=" width:5%; min-width:50px;" data-toggle="modal" data-target="#ModalPostAd" >
+                                <i class="fab fa-buysellads"></i> 
+                            </div>
+
+                            <div id="searchclose" style=" width:5%; min-width:50px;" onclick="searchReturn()">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <div id="searchopen" style="width:5%;min-width:50px;" onclick="searchAds()">
+                                <i class="fa fa-search"></i>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="ModalPostAd">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <center>
+                                        <!-- Modal Header -->
+                                        <!-- <div class="modal-header"> -->
+                                        <!-- <h4 class="modal-title">Modal Heading</h4> -->
+                                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                        <!-- </div> -->
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+
+                                            <div class="inside-modal col-md-12 col-md-offset-2 col-xs-10 col-xs-offset-1">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <div class="modalaccount" id="modalaccount">
+
+                                                    <h2>AD Details</h2>
+                                                    <p class="lead">Give appropriate details for Instant response.</p>
+                                                    <div class="form-group">
+                                                        <!-- <label for="name">Name:</label> -->
+                                                        <!-- <input type="text" class="form-control" id="name">  -->
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <i class="fas fa-pencil-alt fa-lg"></i>
+                                                            </span>
+                                                            <input type="text" id="adtitle" class="form-control" maxlength="20" name="title" placeholder="Title (Samsung Galaxy S9+)">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <!-- <label for="email">Email address:</label> -->
+                                                        <!-- <input type="email" class="form-control" id="email"> -->
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <i class="far fa-edit fa-lg"></i>
+                                                            </span>
+                                                            <textarea id="addescript" class="form-control" rows="4" maxlength="200" name="description" placeholder="Description of item...(max char : 200)"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <!-- <label for="name">Name:</label> -->
+                                                        <!-- <input type="text" class="form-control" id="name">  -->
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <i class="far fa-file-image fa-lg"></i>
+                                                            </span>
+                                                            <input type="file" id="adimage" accept="image/*" class="form-control" name="file" placeholder="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <!-- <label for="pwd">Password:</label> -->
+                                                        <!-- <input type="password" class="form-control" id="pwd"> -->
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <i class="fas fa-th fa-lg"></i>
+                                                            </span>
+
+                                                            <select class="form-control" id="categories">
+                                                                <option value="mobiles">Mobiles</option>
+                                                                <option value="computers">Computer</option>
+                                                                <option value="others">Other</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <!-- <label for="pwd">Password:</label> -->
+                                                        <!-- <input type="password" class="form-control" id="pwd"> -->
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <i class="fas fa-coins fa-lg"></i>
+                                                            </span>
+                                                            <input type="number" 
+                                                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                            id="adprice" class="form-control" maxlength="15" name="price" placeholder="Price (Rs.99)">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <!-- <label for="name">Name:</label> -->
+                                                        <!-- <input type="text" class="form-control" id="name">  -->
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <i class="fas fa-phone fa-lg"></i>
+                                                            </span>
+                                                            <input type="number" 
+                                                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                            id="adnumber" class="form-control" maxlength="11" name="number" placeholder="Contact (0312-3456789)">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <i class="fas fa-map-marker-alt fa-lg"></i>
+
+                                                            </span>
+                                                            <input type="text" id="adlocation" class="form-control" maxlength="22" name="location" placeholder="Location (Shah Faisal Colony,Karachi.)">
+                                                        </div>
+                                                    </div>
+                                                    <div id="errorad"></div>
+                                                    <div class="form-group">
+                                                        <button type="submit" id="submitAdbtn" onclick="submitAd();" class="btn btn-primary btn-block btn-lg">Submit
+                                                            <i class="fas fa-sync-alt fa-spin fa-lg" id="spin"></i>
+                                                        </button>
+                                                    </div>
+
+                                                    <!-- <button type="button" class="btn btn-dark btn-block btn-lg " data-dismiss="modal">Close</button> -->
+
+                                                </div>
+
+                                                <!-- Modal footer -->
+                                                <!-- <div class="modal-footer "> -->
+                                                <!-- <div class="col-md-12 col-md-offset-2 col-xs-12 col-xs-offset-1"> -->
+                                                <!-- <button type="button" class="btn btn-dark btn-block btn-lg " data-dismiss="modal">Close</button> -->
+                                                <!-- </div> -->
+                                                <!-- </div> -->
+                                            </div>
+                                        </div>
+
+                                    </center>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ADs Card -->
+                        <center>
+                            <div class="adCards" id="cardsDiv">
+                                <h1 id="catname"></h1>
+                                <div class="card-deck" id="cardDeck">
+
+
+                                </div>
+                            </div>
+                        </center>
+
+                        <div class="content">
+                        </div>
+                        <footer id="myFooter">
+                            <div class="container-fluid" id="containerfluid">
+                                <div class="row">
+                                    <div class=" col-md-3 ">
+                                        <h2 class="logo">
+                                            <a href="#"> ShopHub </a>
+                                        </h2>
+                                        <br>
+                                        <p>A Platform where you meet with your requirements.</p>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <!-- <h5>Get started</h5>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Sign up</a></li>
+                                <li><a href="#">Downloads</a></li>
+                            </ul> -->
+                                    </div>
+                                    <div class=" col-md-2 ">
+                                        <h5>About us</h5>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Company Information</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Contact us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Reviews</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class=" col-md-2 ">
+                                        <h5>Support</h5>
+                                        <ul>
+                                            <li>
+                                                <a href="#">FAQ</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Help desk</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Forums</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class=" col-md-4 ">
+                                        <div class="social-networks">
+                                            <a href="#" class="twitter">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <!-- <a href="#" class="google"><i class="fab fa-youtube"></i></a> -->
+                                            <a href="https://www.linkedin.com/in/MAfzalKhan1997/" class="linkedin">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                            <a href="https://github.com/MAfzalKhan1997/" class="github">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="https://www.facebook.com/profile.php?id=100002596582204" class="facebook">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </div>
+                                        <button type="button" class="btn btn-default">Contact us</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-copyright">
+                                <p>&copy; 2018 by Muhammad Afzal Khan | All Rights Reserved</p>
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+    <!-- <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('./serviceworker.js')
+                    .then(function () {
+                        console.log('Service Worker Registered');
+                    });
+            }
+        </script> -->
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+    // Initialize Firebase 
+    var config = {
+        apiKey: "AIzaSyDMH8j9q2luinH5P-BKd5gHU3sX5zpILTY",
+        authDomain: "shophub-mak.firebaseapp.com",
+        databaseURL: "https://shophub-mak.firebaseio.com",
+        projectId: "shophub-mak",
+        storageBucket: "shophub-mak.appspot.com",
+        messagingSenderId: "1000638393490"
+    };
+    firebase.initializeApp(config);
+</script>
+
+<!-- <script src="./js/localforage.min.js"></script> -->
+<script src="./js/adsCat.js"></script>
+<script src="./js/postAD.js"></script>
+<script src="./js/nav.js"></script>
+<script src="./js/bktotp.js"></script>
+<!-- <script src="./js/signup.js"></script> -->
+<!-- <script src="./js/login.js"></script>  -->
+
+</html>

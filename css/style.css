@@ -1,0 +1,622 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-image: url('../images/back4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    margin: 0px;
+    padding: 0px;
+    /* text-align: center; */
+}
+
+/* navbar */
+ 
+.navbar{
+    margin-top: 20px;
+}
+
+@media (max-width:767px) { .navbar{ 
+
+    margin-top: 0px;
+}
+}
+
+
+.navbar-brand{
+    font-size: 30px;
+}
+
+.nav-link{ 
+
+    text-align: center;
+    outline: none;
+}
+
+.nb{
+    display: block;
+    font-size: 25px;
+}
+
+nav ul li a {
+ font-size: 12px;
+} 
+
+ nav ul li a:hover{
+    border-bottom: 1px solid white;
+} 
+
+/* nav ul li div a{ */
+    /* padding: 10px; */
+/* } */
+
+/* nav ul li .dropdown-menu a:hover{ */
+    /* border:1px solid #0069d9;  */
+    /* border-radius: 3px; */
+/* }  */
+
+@media (min-width:901px) { .sgnup{ 
+     
+    display: none !important ; 
+}
+}
+
+
+@media (max-width:767px) { .nav-link{ 
+
+    text-align: left;
+    /* display: inline; */
+    /* margin-left: 10px; */
+}
+}
+
+@media (max-width:767px) { .nb , nav ul li a{ 
+
+    /* text-align: left; */
+    display: inline;
+    padding-right: 5px;
+    font-size: 15px;
+    /* margin-left: 10px; */
+}
+}
+
+#navsignin , #navsignup , #introsignin , #introsignup{
+
+    display: inline-block;
+}
+
+.navbar input[type=text]{
+    color:rgba(255, 255, 255, 0.781);
+    background: none;
+    outline: none;
+    border: none;
+    /* padding: 2px; */
+    
+}
+
+.search{
+    color: white;
+    border-radius: 6px;
+    padding: 8px;
+    /* margin: 5px; */
+    border: 1px solid white;
+}
+
+.search i{
+    margin-top:5px; 
+    float: right;
+} 
+
+::-webkit-input-placeholder{
+    color: white;
+}
+
+            /* navabar */
+
+            /* flex */
+
+ .container{
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+    /* background-color: rgb(9, 255, 0); */
+    margin: 20% auto;
+    /* position: relative; */
+    
+} 
+  
+@media (max-height:1024px) { .container{ 
+      
+    margin: 12% auto;
+    }
+    }
+
+ @media (max-height:900px) { .container{ 
+     
+        margin: 8% auto; 
+        }
+        }
+
+ @media (max-height:800px) { .container{ 
+     
+            margin: 4% auto; 
+            }
+            }
+
+ @media (max-height:700px) { .container{ 
+     
+                margin: 4% auto;
+                height: 450px; 
+                }
+                } 
+ 
+ @media (max-height:650px) { .container{ 
+     
+                    margin: 2% auto;
+                    height: 350px; 
+                    }
+                    } 
+
+ @media (min-width:901px) { .container{ 
+      
+       height: 450px;
+        
+           }
+          } 
+ 
+.flex-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    /* margin:0px 4%; */
+    /* width: 90%; */
+    /* height: 100%; */
+    /* background-color: DodgerBlue; */
+    /* margin-top: 100px; */
+
+    position: relative;
+    top: 50%;
+    transform:translateY(-50%);
+
+
+    -webkit-animation: mymoves 0.5s linear; /* Safari 4.0 - 8.0 */
+    animation: mymoves 0.5s linear;
+    -webkit-animation-timing-function: ease; /* Safari 4.0 - 8.0 */
+    animation-timing-function: ease;
+    /* animation-delay: 2s; */
+  }
+
+   
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymoves {
+    from {top: 0px;}
+    to {top: 50px;}
+}
+
+/* Standard syntax */
+@keyframes mymoves {
+    from {top: 0px;}
+    to {top: 50px;}
+}
+
+
+  
+.flex-container > div {
+    /* background-color: #3d59f8; */
+    color: white;
+    margin:0px 4%;
+    /* width: auto; */
+    width: 450px;
+    height: 100%;
+  }
+
+                /* intro */
+  .intro h1{
+    font-size: 100px;
+} 
+
+.intro p{
+    font-size: 25px;
+}
+
+.intro div a{
+    color: rgba(255, 255, 255, 0.651);  
+}
+
+.intro div a :hover{
+    color: white; 
+  }
+
+.intro div .fa{
+    font-size: 20px;
+    padding: 10px;
+}
+
+@media (min-width:768px) { .intro div{ 
+     
+    display: none; 
+    }
+    }
+
+@media (max-width:900px) { .intro{ 
+     
+text-align: center; 
+}
+}
+
+@media (max-width:430px) { .intro p{ 
+     
+    font-size: 18px; 
+    }
+}
+
+@media (max-width:430px) { .intro h1{ 
+     
+        font-size: 85px; 
+        }
+        }
+
+ @media (max-width:380px) { .intro p{ 
+     
+    font-size: 16px; 
+    }
+}
+
+@media (max-width:380px) { .intro h1{ 
+     
+        font-size: 75px; 
+        }
+        }
+
+                    /* intro */
+
+                     /* createacc */
+
+  /* .form-control, .form-control:focus, .input-group-addon {
+    border-color: #e1e1e1;
+    border-radius: 0;
+} */
+.signup-form {
+    /* color: #999; */
+		background: transparent;
+    width: 390px;
+    margin: 0 auto;
+    /* padding: 30px 0; */
+
+    
+}
+
+.signup-form h2 {
+    color: white;
+    margin: 0 0 15px;
+    text-align: center;
+}
+.signup-form .lead {
+    /* width: auto; */
+    font-size: 14px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.signup-form form {		
+    border-radius: 1px;
+    /* margin-bottom: 15px; */
+    /* background: #fff; */
+    background: transparent;
+    /* border: 1px solid #f3f3f3; */
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
+    padding: 30px; 
+}
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
+/* .signup-form label {
+    font-weight: normal;
+    font-size: 23px;
+}    */
+.signup-form .form-control {
+    color: #083d32;
+    min-height: 38px;
+    box-shadow: none !important;
+    border: none; 
+
+    /* -webkit-animation: mymove 0.5s linear; 
+    animation: mymove 0.5s linear;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    animation-delay: 0.5s; */
+}
+
+.signup-form .input-group{
+/* color: black; */
+background-color: white;
+/* border: none; */
+border-radius: 3px;
+}
+ 
+.signup-form .input-group-addon {
+    color: #128870;
+    /* max-width: 42px; */
+    text-align: center;
+    background: none;
+    /* border-bottom: 1px solid white; */
+    padding-left: 5px;
+    padding-top: 7px;
+}
+.signup-form .btn {        
+    font-size: 16px;
+    font-weight: bold;
+    background: #19aa8d;
+    border-radius: 3px;
+    border: none;
+    /* min-width: 140px; */
+    outline: none !important;
+}
+.signup-form .btn:hover, .signup-form .btn:focus {
+    background: #179b81;
+}
+
+/* .signup-form a {
+    color: #19aa8d;
+    color: white;
+    text-decoration: none;
+}	 */
+
+/* .signup-form a:hover {
+    text-decoration: underline;
+} */
+
+.signup-form .fa {
+    font-size: 18px;
+}
+.signup-form .fa-paper-plane ,.signup-form .fa-phone {
+    font-size: 16px;
+}
+/* .signup-form .fa-check {
+    color: #fff;
+    left: 10px;
+    top: 18px;
+    font-size: 7px;
+    position: absolute;
+} */
+
+.signup-form a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (max-width:900px) { .createacc{ 
+     
+    display: none; 
+}
+}
+                /* createacc */
+
+                     /* flex */
+
+
+                /* modal */
+
+.modal-content{
+/* background-color: blue; */
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.164);
+}
+                               
+.modal-body{
+    /* background-color: rgb(238, 34, 34); */
+    color: #128870; 
+}
+ 
+.modalaccount h2  , .modallogin h2 {
+    /* color: white; */
+    margin: 0 0 15px;
+    text-align: center;
+}
+.modalaccount .lead  , .modallogin .lead { 
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modalaccount .form-group {
+    /* margin-bottom: 20px; */
+    background-color: none;
+}
+/* .signup-form label {
+    font-weight: normal;
+    font-size: 23px;
+}    */
+
+.modalaccount .input-group , .modallogin .input-group {
+    /* color: black; */
+    background-color: none;
+    /* border: none; */
+    border-radius: 3px; 
+    }
+ 
+.modalaccount .form-control  , .modallogin .form-control{
+    color: #083d32;
+    min-height: 38px;
+    box-shadow: none !important;
+    /* border: none; */
+    border-width: 0 0 1px 0;
+    background-color: none;
+    
+    -webkit-animation: mymove 0.5s linear; /* Safari 4.0 - 8.0 */
+    animation: mymove 0.5s linear;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes mymove {
+        from {left: 50px;}
+        to {left: 0px;}
+    }
+    
+    /* Standard syntax */
+    @keyframes mymove {
+        from {left: 50px;}
+        to {left: 0px;}
+    }
+
+    @media (max-width:767px) { @keyframes mymove {
+        from {left: 30px;}
+        to {left: 0px;}
+    }
+    }
+    @media (max-width:767px) { @-webkit-keyframes mymove {
+        from {left: 30px;}
+        to {left: 0px;}
+    }
+    }
+
+
+.modalaccount .input-group-addon , .modallogin .input-group-addon {
+    color: #128870; 
+    text-align: center;
+    background: none;
+    /* border-bottom: 1px solid white; */
+    padding-left: 5px;
+    padding-top: 7px;
+}
+
+.modalaccount p , .modallogin p { 
+    margin: 0px;
+}
+
+.modal-body .inside-modal .btn  {        
+    font-size: 16px;
+    /* font-weight: bold; */
+    /* background: #19aa8d; */
+    border-radius: 2px; 
+    border: none; 
+    outline: none !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modalaccount .btn-primary , .modallogin .btn-primary { 
+    margin-bottom: 30px;
+}
+/* .modalaccount .btn:hover, .modalaccount .btn:focus { */
+    /* background: #179b81; */
+/* } */
+
+/* .signup-form a {
+    color: #19aa8d;
+    color: white;
+    text-decoration: none;
+}	 */
+
+/* .signup-form a:hover {
+    text-decoration: underline;
+} */
+
+.modalaccount .fa , .modallogin .fa {
+    font-size: 18px;
+}
+.modalaccount .fa-paper-plane  , .modallogin .fa-paper-plane  ,.modalaccount .fa-phone ,.modallogin .fa-phone {
+    font-size: 16px;
+}
+/* .signup-form .fa-check {
+    color: #fff;
+    left: 10px;
+    top: 18px;
+    font-size: 7px;
+    position: absolute;
+} */
+
+.modalaccount a , .modallogin a {
+    color: #128870;
+    display: inline-block;
+    text-decoration: none;
+    /* color: white; */
+}
+
+@media (min-width:901px) { .modalaccount{ 
+     
+    display: none; 
+}
+}
+
+#spin1{ 
+    display: none;
+    padding: 5px 0px 5px 0px;
+    float: right;
+}
+
+#spin2{ 
+    display: none;
+    padding: 5px 0px 5px 0px;
+    float: right;
+}
+
+#spin3{ 
+    display: none;
+    padding: 5px 0px 5px 0px;
+    float: right;
+}
+
+#error{
+    margin: 7px;
+    color: rgb(207, 0, 0);
+}
+
+                    /* modal */
+
+                     /* copyryt */
+
+.footer-copyright {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background-color: #3333336b; */
+    /* background-color: rgba(51,51,51, 0.8); */
+    background-color: rgba(51, 51, 51, 0.24);
+    /* padding-top: 2px; */
+    /* padding-bottom: 2px; */
+    text-align: center;
+}
+ 
+.footer-copyright p {
+    font-size: 14px;
+    margin: 10px;
+    /* color: #ccc; */
+    color: white;
+}
+
+
+@media (max-width:420px) { .footer-copyright p{ 
+     
+    font-size: 12px; 
+}
+}
+                     /* copyryt */
+
+
+#loading {width: 100%;height: 100%;top: 0px;left: 0px;position: fixed;display: block; background-color: #fff; z-index: 99}
+ 
+#loading-image {
+    position: fixed;
+    z-index: 999;
+    /* height: 2em; */
+    /* width: 2em; */
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  
+  @media (max-width:767px) {#loading-image{ 
+    
+    height: 2em;
+     width: 2em;
+  }
+  }
